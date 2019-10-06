@@ -1,0 +1,50 @@
+.sec-online {
+    width: 817px;
+    height: 955px;
+    margin: 0 auto;
+    margin-top: 91px;
+    display: grid;
+    grid-template: 98px 434px 62px 150px 209px / auto;
+
+    .sec-online--title {
+        font-family: $ysv;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin: 0 auto;
+        color: white;
+    
+
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-top: 21px;
+        }
+    }
+        
+    .sec-online--video {
+        img {
+            cursor: pointer;
+        }
+    }
+
+    .sec-online--desc {
+        grid-row: 4;
+        font-family: $book;
+        font-size: 20px;
+        text-align: center;
+        justify-self: center;
+        width: 681px;
+        line-height: 31px;
+
+        &::before {
+            content: "";
+            display: block;
+            border-radius: 5px;
+            margin: 0 auto;
+            margin-bottom: 34px;
+            width: 55px;
+            height: 1.5px;
+            background: $golden;
+        }
+    }
+}

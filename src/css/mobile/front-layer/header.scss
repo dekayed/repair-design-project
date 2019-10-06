@@ -1,0 +1,36 @@
+header {
+    height: 57px;
+    width: 100%;
+    background: $body-bg-color;
+    font-size: 12px;
+
+
+    .header-container {
+        width: 87%;
+        margin: 0 auto;
+        height: 100%;
+        display: grid;
+        grid-template: auto/176fr 56fr 107fr;
+        align-items: center;
+    
+
+        h1 {
+            color: $golden;
+            font-family: $demi;
+            font-size: 1em;
+            text-transform: uppercase;
+        }
+        nav {
+            display: none;
+        }
+        a {
+            color: white;
+            grid-column: 3;
+            font-family: $demi;
+            text-decoration: none;
+        }
+        button {
+            display: none;
+        }
+    }
+}

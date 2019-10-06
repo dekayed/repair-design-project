@@ -1,0 +1,50 @@
+$body-bg-color: #131313;
+$golden: #E3B873;
+$demi: "Futura Demi C";
+$medium: "Futura Medium C";
+$book: "Futura Book C";
+$nova: "Proxima Nova";
+$ysv: "Yeseva One";
+ 
+body {
+  width: 100vw;
+  max-width: 100%;
+  background: $body-bg-color;
+  margin: 0;
+}
+
+@media only screen and (min-width: 641px) {
+  @import "css/back-layer";
+  @import "css/front-layer";
+}
+@media only screen and (max-width: 640px) {
+  @import "css/mobile/back-layer";
+  @import "css/mobile/front-layer";
+}
+
+@font-face {
+  font-family: $demi;
+  font-style: normal;
+  src: url(fonts/futurademic.otf);
+}
+@font-face {
+  font-family: "Futura Medium C";
+  src: url(fonts/futuramediumc.otf);
+}
+@font-face {
+  font-family: $demi;
+  font-style: italic;
+  src: url(fonts/futurademic-italic.otf);
+}
+@font-face {
+  font-family: $nova;
+  src: url(fonts/ProximaNova-Reg.otf);
+}
+@font-face {
+  font-family: $ysv;
+  src: url('fonts/YesevaOne-Regular.ttf');
+}
+@font-face {
+  font-family: $book;
+  src: url(fonts/futurabookc.otf);
+}

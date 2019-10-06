@@ -1,0 +1,140 @@
+.sec-banner {
+    display: grid;
+    grid-template: 707px / 82px auto;
+
+    .instagram {
+        width: 100%;
+        height: 100%;
+        background: $body-bg-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        a {
+            color: $golden;
+            font-family: $demi;
+            text-decoration: none;
+            text-transform: uppercase;
+            writing-mode: vertical-lr;
+        
+            &::after {
+                content: "";
+                width: 3px;
+                height: 51px;
+                background: $golden;
+                float: right;
+                margin-top: 8px;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .banner {
+        background-image: url(img/image-4.3.png);
+        background-size: cover;
+        display: flex;
+        align-items: center;
+    
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: calc(100% - 82px);
+            height: 707px;
+            z-index: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .banner-content {
+            height: 377px;
+            width: 100%;
+            z-index: 0;
+            padding-left: 60px;
+        
+            h1 {
+                font-family: 'Yeseva One';
+                font-size: 40px;
+                width: 520px;
+                font-weight: 100;
+                text-transform: uppercase;
+                color: white;
+            
+                span {
+                    color: $golden;
+                }
+            }
+
+            h4 {
+                font-family: $book;
+                font-size: 22px;
+                width: 504px;
+                color: white;
+                font-weight: 100;
+            }
+
+            .buttons {
+                display: inline-flex;
+            
+                button {
+                    width: 207px;
+                    height: 51px;
+                    font-family: $demi;
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    border-radius: 2px;
+                    transition: all .15s ease-in-out;
+                    cursor: pointer;
+                
+                    &:first-child {
+                        background: $golden;
+                        border: 0;
+                        color: white;
+                        margin-right: 20px;
+                    
+                        &:hover {
+                            background: white;
+                            color: $golden;
+                        }
+                    }
+
+                    &:last-child {
+                        background: transparent;
+                        color: white;
+                        border: 1px solid white;
+                        box-sizing: border-box;
+
+                        &:hover {
+                            color: $golden;
+                            border-color: $golden;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.scroll-down {
+    width: 247px;
+    height: 97px;
+    color: white;
+    position: sticky;
+    bottom: 0;
+    font-family: $ysv;
+    font-size: 14px;
+    text-transform: uppercase;
+    background: $body-bg-color;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    align-items: center;
+    margin-top: -46px;
+
+    &::after {
+        content: '';
+        width: 29px;
+        height: 29px;
+        margin-left: 12px;
+        background: url(img/scroll-down.svg);
+    }
+}
