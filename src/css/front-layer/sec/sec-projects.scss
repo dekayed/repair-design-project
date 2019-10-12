@@ -96,44 +96,6 @@
                 }
             }
         }
-
-        .pages {
-            display: inline-flex;
-            grid-area: pages;
-        
-            button {
-                margin-right: 17px;
-                border: 0;
-                border-radius: 10px;
-                background: rgba(255,255,255,.6);
-                outline: none;
-            
-                &.active {
-                    background: #fff;
-                }
-            }
-
-            button:first-child {
-                background: url(img/page-arrow.svg);
-                margin-right: 30px;
-            }
-
-            button:first-child, button:last-child {
-                width: 41px;
-                height: 13px;
-                border: 0;
-              
-                &:active {
-                    margin-top: 1px;
-                }
-            }
-            
-            button:last-child {
-                margin-left: 13px;
-                background: url(img/page-arrow.svg);
-                transform: scaleX(-1);
-            }
-        }
     }
 
     .carousel {

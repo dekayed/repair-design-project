@@ -51,26 +51,11 @@ header {
             font-family: $demi;
         }
         button {
-            background-color: $golden;
             width: 161px;
             height: 37px;
             grid-column: 7;
-            border: 0;
-            border-radius: 3px;
-            color: white;
-            font-family: $demi;
             font-style: italic;
             font-size: .9em;
-            text-transform: uppercase;
-            cursor: pointer;
-            transition: all .1s ease-in-out;
-
-            &:hover {
-                background-color: white;
-                color: $golden;
-                border: 2px solid $golden;
-                box-sizing: border-box;
-            }
         }
     }
 }

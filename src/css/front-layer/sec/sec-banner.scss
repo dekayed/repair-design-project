@@ -78,35 +78,10 @@
                 button {
                     width: 207px;
                     height: 51px;
-                    font-family: $demi;
-                    text-transform: uppercase;
                     font-size: 13px;
-                    border-radius: 2px;
-                    transition: all .15s ease-in-out;
-                    cursor: pointer;
                 
                     &:first-child {
-                        background: $golden;
-                        border: 0;
-                        color: white;
                         margin-right: 20px;
-                    
-                        &:hover {
-                            background: white;
-                            color: $golden;
-                        }
-                    }
-
-                    &:last-child {
-                        background: transparent;
-                        color: white;
-                        border: 1px solid white;
-                        box-sizing: border-box;
-
-                        &:hover {
-                            color: $golden;
-                            border-color: $golden;
-                        }
                     }
                 }
             }

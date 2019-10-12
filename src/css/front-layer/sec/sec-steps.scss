@@ -2,5 +2,146 @@
     width: 87%;
     height: 725px;
     margin: 0 auto;
+    display: grid;
+    grid-template: 100% / auto 506px;
     margin-top: 124px;
+
+    .steps-left {
+
+        img {
+            margin-left: -405px;
+            position: absolute;
+        }
+        .steps--circle {
+            width: 636px;
+            height: 636px;
+            margin: 55px 0 0 -257px;
+            border-radius: 50%;
+            background: linear-gradient(to left, $golden, rgba(227, 184, 115, 0));
+            padding-top: 3px;
+
+            &::after {
+                content: '';
+                display: block;
+                width: calc(100% - 3px);
+                height: calc(100% - 3px);
+                border-radius: 50%;
+                margin-left: 1.5px;
+                background: white;
+            }
+        }
+        ol {
+            position: absolute;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {        
+                font-family: $medium;
+                font-size: 18px;
+                color: black;
+                display: flex;
+                align-items: center;
+
+                &::before {
+                    font-family: $ysv;
+                    font-size: 18px;
+                    color: white;
+                    width: 41px;
+                    height: 41px;
+                    display: inline-block;
+                    background: $golden;
+                    text-align: center;
+                    line-height: 41px;
+                    border-radius: 50%;
+                    margin-right: 6px;
+                    border: 11px solid white;
+                }
+            }
+            @for $i from 1 through 4 {
+                li:nth-child(#{$i})::before {
+                    content: '0'+$i;
+                }
+            }
+            li:nth-child(1) {
+                margin: 117px 0 0 255px;
+            }
+            li:nth-child(2) {
+                margin: 48px 0 0 329px;
+            }
+            li:nth-child(3) {
+                margin: 97px 0 0 344px;
+            }
+            li:nth-child(4) {
+                margin: 96px 0 0 279px;
+            }
+        }
+    }
+
+    .steps-right {
+        display: grid;
+        grid-template: 1fr 509px 1fr / 100%;
+
+        .steps-form-cont {
+            width: 100%;
+            height: 509px;
+            grid-row: 2;
+            background: #131313 url(img/steps-form-bg.png);
+            background-size: cover;
+            display: grid;
+            grid-template: 75px auto / 100%;
+            justify-content: center;
+
+            h3 {
+                font-family: "Futura Demi C";
+                color: white;
+                font-weight: 100;
+                text-align: center;
+                margin: 26px 0 0 0;
+            }
+
+            form {
+                padding-top: 39px;
+                width: 408px;
+                display: flex;
+                flex-flow: column;
+                justify-self: center;
+
+                label {
+                    color: rgba(255,255,255,.5);
+                    
+                    &:nth-child(1), &:nth-child(2) {
+                        margin-bottom: 48px;
+                    }
+
+                    input {
+                        display: block;
+                        color: white;
+                        width: 100%;
+    
+                        &::placeholder {
+                            color: white;
+                        }
+                    }
+                }
+                .check {
+                    margin-top: 16px;
+                    width: 286px;
+                    color: white;
+                }
+                .button {
+                    align-self: flex-end;
+                    width: 213px;
+                    height: 51px;
+                    margin-top: 38px;
+                }
+            }
+        }
+        img {
+            grid-row: 3;
+            align-self: end;
+            justify-self: center;
+            margin-bottom: -38px;
+        }
+    }
 }

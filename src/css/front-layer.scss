@@ -1,8 +1,42 @@
 front-layer {
     width: 100%;
     position: absolute;
-}
-    
+
     @import "front-layer/header";
     @import "front-layer/sections";
     @import "front-layer/footer";
+
+    .button {
+        background-color: $golden;
+        color: white!important;
+        font-family: $demi;
+        text-transform: uppercase;
+        border-radius: 2px;
+        transition: all .15s ease-in-out;
+        cursor: pointer;
+        border: 0!important;
+        box-sizing: border-box;
+    
+        &:hover {
+            background: #ad884d;
+            border: 2px solid $golden!important;
+        }
+    }
+    
+    .button-2 {
+        background: transparent;
+        color: white!important;
+        border: 2px solid white;
+        box-sizing: border-box;
+        transition: all .15s ease-in-out;
+        cursor: pointer;
+        border-radius: 2px;
+        text-transform: uppercase;
+        font-family: $demi;
+    
+        &:hover {
+            color: $golden!important;
+            border-color: $golden;
+        }
+    }
+}

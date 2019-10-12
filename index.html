@@ -20,7 +20,7 @@
                     <a href="#">contacts</a>
                 </nav>
                 <a href="tel:+7928-768-3239">+7 (928) 768-32-39</a>
-                <button>request a call</button>
+                <button class="button">request a call</button>
             </div>
         </header>
         <section class="sec-banner">
@@ -32,8 +32,8 @@
                             with work time saving up to 45 days and 20% from
                             cost of materials due to the organization of work</h4>
                     <div class="buttons">
-                        <button>calculate the cost</button>
-                        <button>sumbit your application</button>
+                        <button class="button">calculate the cost</button>
+                        <button class="button-2">sumbit your application</button>
                     </div>
                 </div>
             </div>
@@ -95,7 +95,7 @@
             </div>
         </section>
         <section class="sec-online">
-            <div class="sec-online--title">
+            <div class="sec--title">
                 Online control
                 <img src="src/img/online-control.svg">
             </div>
@@ -106,27 +106,277 @@
                     At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!
                     <br>Leave a request below and you will receive a link to the broadcast.
             </div>
+            <form>
+                <label>Name</label>
+                <input type="text" placeholder="What is your name:">
+                <label>Phone</label>
+                <input type="text" placeholder="Your phone number:">
+                <input class="button" type="submit" value="Submit">
+                <label class="check">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    I agree to the processing of personal data
+                </label>
+            </form>
         </section>
         <section class="sec-types">
-            
+            <div class="sec--title">
+                Types of repair
+                <img src="src/img/types-icon.svg">
+            </div>
+            <div class="cards">
+                <div class="card card-1">
+                    <div class="card-info">
+                        <h3>Redecorating</h3>
+                        <ul>
+                            <li>• Dismantling of old coatings</li>
+                            <li>• Wallpapering</li>
+                            <li>• Painting walls and ceilings</li>
+                            <li>• Laying flooring</li>
+                            <li>• Replacing plumbing</li>
+                            <li>• Replacing sockets and switches</li>
+                            <li>• Replacing doors</li>
+                        </ul>
+                    </div>
+                    <div class="card-price">from 900 rub / m2</div>
+                </div>
+                <div class="card card-2">
+                    <div class="card-info">
+                        <h3>Overhaul</h3>
+                        <ul>
+                            <li>• Dismantling of old coatings</li>
+                            <li>• Wallpapering</li>
+                            <li>• Painting walls and ceilings</li>
+                            <li>• Laying flooring</li>
+                            <li>• Replacing plumbing</li>
+                            <li>• Replacing sockets and switches</li>
+                            <li>• Replacing doors</li>
+                        </ul>
+                    </div>
+                    <div class="card-price">from 1800 rub / m2</div>
+                </div>
+                <div class="card card-3">
+                    <div class="card-info">
+                        <h3>Designer Repair</h3>
+                        <ul>
+                            <li>• Dismantling of old coatings</li>
+                            <li>• Wallpapering</li>
+                            <li>• Painting walls and ceilings</li>
+                            <li>• Laying flooring</li>
+                            <li>• Replacing plumbing</li>
+                            <li>• Replacing sockets and switches</li>
+                            <li>• Replacing doors</li>
+                        </ul>
+                    </div>
+                    <div class="card-price">from 4000 rub / m2</div>
+                </div>
+            </div>
         </section>
         <section class="sec-steps">
+            <div class="steps-left">
+                <img src="src/img/steps-building.png" alt="steps-building">
+                <ol>
+                    <li><div>Our specialist will arrive for measurements per day<br>contact, or appoint a date convenient for you</div></li>
+                    <li><div>Free metering</div></li>
+                    <li><div>Free consultation</div></li>
+                    <li><div>Get a cost estimate and<br>the timing of your future repairs</div></li>
+                </ol>
+                <div class="steps--circle"></div>
+            </div>
+            <div class="steps-right">
+                <div class="steps-form-cont">
+                    <h3>Leave a request for free<br>departure of the measurer</h3>
+                    <form>
+                        <label for="name">Name<input id="name" type="text" placeholder="What is your name:"></label>
+                        <label>Phone<input type="text" placeholder="Your phone number:"></label>
+                        <label>Email<input type="text" placeholder="Your email"></label>
+                        <label class="check">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            I agree to the processing of personal data
+                        </label>
+                        <input class="button" type="submit" value="Call the measurer">
+                    </form>
+                </div>
+                <img src="src/img/charity.png" alt="charity">
+            </div>
             
         </section>
         <section class="sec-styles">
-            
+            <div class="styles--left">
+                <span class="styles--title">We realize your<br>wildest fantasies</span>
+                <ul>
+                    <li>American classic</li>
+                    <li>Empire</li>
+                    <li>Classical</li>
+                    <li>Loft</li>
+                    <li>Minimalism</li>
+                    <li>Provence</li>
+                    <li>Romanticism</li>
+                    <li>Scandinavian style</li>
+                    <li>Mediterranean style</li>
+                    <li>High tech</li>
+                    <li>Eclecticism</li>
+                </ul>
+            </div>
+            <div class="styles--right">
+                <img src="src/img/image 5.png" alt="">
+                <img src="src/img/image 5-1.png" alt="">
+                <img src="src/img/image 5-3.png" alt="">
+                <img src="src/img/image 5-2.png" alt="">
+            </div>
         </section>
         <section class="sec-prices">
-            
+            <div class="sec--title">
+                Design project
+                <img src="src/img/design-icon.svg" alt="design-icon">
+                <span class="sec--title-desc">
+                    Design project not only helps to make the repair of your apartment more modern,<br>but also significantly reduces the cost of materials and reduces the time of repair work.
+                </span>
+            </div>
+            <div class="cards">
+                <div class="card card-1">
+                    <div class="card-info">
+                        <h3>Mini</h3>
+                        <ul>
+                            <li>• Measurement drawing</li>
+                            <li>• Redevelopment</li>
+                            <li>• Layout of furniture</li>
+                            <li>• Plumbing plan. equipment</li>
+                        </ul>
+                    </div>
+                    <div class="card-price">150 rub / m2</div>
+                </div>
+                <div class="card card-2">
+                    <div class="card-info">
+                        <h3>Standart</h3>
+                        <ul>
+                            <li>• Measurement drawing</li>
+                            <li>• Redevelopment</li>
+                            <li>• Layout of furniture</li>
+                            <li>• Plan of ceilings</li>
+                            <li>• Floor Plan</li>
+                            <li>• Electricians plan</li>
+                            <li>• Lighting plan</li>
+                        </ul>
+                    </div>
+                    <div class="card-price">400 rub / m2</div>
+                </div>
+                <div class="card card-3">
+                    <div class="card-info">
+                        <h3>Full</h3>
+                        <ul>
+                            <li>• Measurement drawing</li>
+                            <li>• Redevelopment</li>
+                            <li>• Layout of furniture</li>
+                            <li>• Plan of ceilings</li>
+                            <li>• Floor Plan</li>
+                            <li>• Electricians plan</li>
+                            <li>• Lighting plan</li>
+                            <li>• Wall reamers</li>
+                            <li>• 3D visualization</li>
+                            <li>• Bill of materials</li>
+                            <li>• Departure for a selection of materials</li>
+                            <li>• Furniture selection</li>
+                        </ul>
+                    </div>
+                    <div class="card-price">900 rub / m2</div>
+                </div>
+            </div>
         </section>
         <section class="sec-work-process">
-            
+            <div class="process-titles">
+                <span>how we are working</span>
+                <h3>6 steps to<br>the goal</h3>
+            </div>
+            <div class="process-steps-desc">
+                <span>1/6</span>
+                <h4>Departure for<br>measurements premises</h4>
+                <p>
+                    After your call, we go to you to consult and measure the premises of your apartment. 
+                    During our meeting, you can ask absolutely any number of questions. 
+                    An appraiser-appraiser leaves to measure the room.
+                    <br><br>
+                    He will advise you on the issues of repair technology, apartment design, 
+                    terms of repair of the apartment as a whole and its individual stages.
+                </p>
+            </div>
+            <div class="pages">
+                <button></button>
+                <button class="active"></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+            </div>
+            <div class="process-steps">
+                <ol>
+                    <li>Departure to<br>room mesurements</li>
+                    <li>Compilation estimates</li>
+                    <li>Development<br>project design</li>
+                    <li>Purchasing supplies</li>
+                    <li>Repair finishing work</li>
+                    <li>Приемка-сдача работ</li>
+                </ol>
+            </div>
+            <img src="src/img/steps-image.png" alt="steps-image">
         </section>
         <section class="sec-team">
-            
+            <div class="sec--title">
+                Our team
+                <img src="src/img/team-icon.svg" alt="team-icon">
+                <span class="sec--title-desc">
+                    Our team has helped to become happier for more than<br>
+                    500 families and we are not going to stop
+                </span>
+            </div>
+            <div class="cards">
+                <div class="card-cont">
+                    <div class="card card-1">
+                        <div class="card-info">
+                            <h3>Dmitry Tulyakov</h3>
+                            <span>Project manager</span>
+                        </div>
+                        <div class="card-price">Work experience 8 years</div>
+                    </div>
+                </div>
+                <div class="card-cont">
+                    <div class="card card-2">
+                        <div class="card-info">
+                            <h3>Larisa Kotlyarova</h3>
+                            <span>Designer</span>
+                        </div>
+                        <div class="card-price">Work experience 6 years</div>
+                    </div>
+                </div>
+                <div class="card-cont">
+                    <div class="card card-3">
+                        <div class="card-info">
+                            <h3>Alexey Efimov</h3>
+                            <span>Foreman</span>
+                        </div>
+                        <div class="card-price">Work experience 12 years</div>
+                    </div>
+                </div>
+            </div>
+            <p>
+                Each employee of our company is a qualified full-time specialist<br>
+                with work experience of 6 years.<br>
+                We do not have laborers and guest workers, each employee carries out<br>
+                work corresponding to his specialty.
+            </p>
         </section>
         <section class="sec-clients">
-            
+                <div class="sec--title">
+                        Our clients
+                        <img src="src/img/clients-icon.svg" alt="team-icon">
+                        <span class="sec--title-desc">
+                            80% of our customers recommend us to their<br>
+                            friends and family.
+                        </span>
+                    </div>
         </section>
         <section class="sec-questions-form">
             

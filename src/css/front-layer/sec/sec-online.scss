@@ -4,21 +4,10 @@
     margin: 0 auto;
     margin-top: 91px;
     display: grid;
-    grid-template: 98px 434px 62px 150px 209px / auto;
+    grid-template: 98px 434px 62px 158px 202px / auto;
 
-    .sec-online--title {
-        font-family: $ysv;
-        font-size: 20px;
-        text-transform: uppercase;
-        margin: 0 auto;
+    .sec--title {
         color: white;
-    
-
-        img {
-            display: block;
-            margin: 0 auto;
-            margin-top: 21px;
-        }
     }
         
     .sec-online--video {
@@ -45,6 +34,44 @@
             width: 55px;
             height: 1.5px;
             background: $golden;
+        }
+    }
+
+    form {
+        display: grid;
+        grid-template: 14px 33px 51px / 231px 58px 231px 49px 200px;
+        grid-auto-flow: column;
+        grid-row: 5;
+        align-self: end;
+        justify-self: center;
+        
+        label {
+            grid-row: 1;
+        }
+        input {
+            grid-row: 2;
+
+            &.button {
+                grid-column: 5;
+                grid-row: 1 / span 2;
+            }
+
+            &::placeholder {
+                color: black;
+            }
+
+        }
+        label, input {
+            &:nth-child(3) {
+                grid-column: 3;
+            }
+            &:nth-child(4) {
+                grid-column: 3;
+            }
+        }
+        label.check {
+            grid-row: 3;
+            grid-column: 1 / span 5;
         }
     }
 }
