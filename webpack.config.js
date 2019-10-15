@@ -1,4 +1,5 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+var path = require('path');
 
 module.exports = {
     module: {
@@ -6,7 +7,7 @@ module.exports = {
         {
           test: /\.s[ac]ss$/i,
           use: [
-            process.env.NODE_ENV !== 'production'
+            process.env.NODE_ENV == 'production'
               ? 'style-loader'
               : MiniCssExtractPlugin.loader,
             // Translates CSS into CommonJS
@@ -17,7 +18,7 @@ module.exports = {
         },
         { 
           test: /\.(png|svg|otf|ttf)$/, 
-          loader: 'file-loader' 
+          loader: 'file-loader?name=/[name].[ext]' 
         },
       ],
     },
@@ -29,4 +30,8 @@ module.exports = {
         chunkFilename: '[id].css',
       }),
     ],
+    output: {
+      path: path.resolve(__dirname, './assets'),
+      publicPath: '/assets',
+    }
   };
