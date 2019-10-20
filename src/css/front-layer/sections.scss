@@ -85,6 +85,7 @@ section form {
         color: rgba(54, 54, 54, 0.5);
     }
     input {
+        display: block;
         border: 0;
         border-bottom: 1px solid rgba(54, 54, 54, .5);
         color: rgb(54,54,54);
@@ -197,6 +198,12 @@ section form {
                 }
             }
         }
+
+        &:hover .card-info {
+            box-shadow: 10px 10px 20px rgba(0,0,0,.12);
+            margin-top: 285px;
+        }
+
         .card-price {
             width: 228px;
             height: 54px;
@@ -210,11 +217,6 @@ section form {
             margin-top: -26px;
             background: $golden;
             margin-left: calc((100% - 84.2%) / 2);
-        }
-
-        &:hover {
-            margin-top: -15px!important;
-            box-shadow: 5px 5px 11px rgba(0,0,0,.1)!important;
         }
     }
 }

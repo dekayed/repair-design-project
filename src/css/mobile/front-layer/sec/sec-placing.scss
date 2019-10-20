@@ -1,5 +1,41 @@
 .sec-placing {
     width: 87%; 
-    height: 665px; 
+    height: 613px; 
     margin: 0 auto;
+    margin-top: 52px;
+
+    .sec-placing__address {
+        width: 589px;
+        height: 51px;
+        font-family: $ysv;
+        font-size: 20px;
+        color: $golden;
+        text-transform: uppercase;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .sec-placing__socials {
+        margin: 0 auto;
+        margin-top: 26px;
+        width: fit-content;
+
+        a {
+            width: 28px;
+            height: 28px;
+            display: inline-block;
+            border-radius: 50%;
+        }
+
+        .social-mail {
+            background: 50% 50% $golden url(img/mail-icon.svg) no-repeat;
+        }
+        .social-insta {
+            margin-right: 15px;
+            background: 50% 50% $golden url(img/instagram-icon.svg) no-repeat;
+        }
+    }
+    .mapouter {
+        margin: 0 auto;
+        margin-top: 28px;
+    }
 }

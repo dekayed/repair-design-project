@@ -3,4 +3,88 @@
     height: 844px;
     margin: 0 auto;
     margin-top: 94px;
+
+    .sec--title {
+        color: white;
+    }
+
+    .cards {
+        width: 85.9%;
+        margin: 0 auto;
+        height: 449px;
+
+        .card-cont {
+            display: flex;
+            @for $i from 1 to 4 {
+                &::before {
+                    content: '';
+                    background: 50% 50% $golden url("img/team-#{$i}-icon.svg") no-repeat;
+                    display: block;
+                    position: absolute;
+                    width: 70px;
+                    height: 70px;
+                    box-shadow: 0 5px 20px rgba(227, 184, 115, .5);
+                }
+                .card-#{$i} {
+                    background-image: url("img/team-#{$i}.png");
+                }
+            }
+
+            .card {
+                width: 272px;
+                background-position-x: right;
+                height: calc(100% - 35px);
+                margin: 35px 0 0 35px;
+
+                .card-info {
+                    margin-top: 277px;
+                    padding-bottom: 47px;
+
+                    h3 {
+                        text-align: center;
+                        padding-top: 22px;
+                    }
+                    span {
+                        font-family: $book;
+                        font-size: 18px;
+                        color: #959595;
+                        text-align: center;
+                        display: block;
+                        margin-top: 9px;
+                    }
+                }
+
+                .card-price {
+                    font-size: 13px;
+                    width: 84.2%;
+                    height: 44px;
+                }
+
+                &:hover {
+                    margin-top: 35px!important;
+                    box-shadow: none!important;
+                }
+            }
+        }
+    }
+    p {
+        display: block;
+        width: 558px;
+        margin: 0 auto;
+        margin-top: 53px;
+        font-family: $book;
+        font-size: 20px;
+        line-height: 169.8%;
+        text-align: center;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 55px;
+            height: 2px;
+            background: $golden;
+            margin: 0 auto;
+            margin-bottom: 17px;
+        }
+    }
 }

@@ -3,4 +3,20 @@
     height: 922px;
     margin: 0 auto;
     margin-top: 112px;
+
+    .sec--title {
+        color: black;
+    }
+
+    .card-1 {
+            background-image: url(img/type-1.png)!important;
+    }
+
+    .card-2 {
+        background-image: url(img/type-2.png);
+    }
+
+    .card-3 {
+        background-image: url(img/type-3.png)!important;
+    }
 }

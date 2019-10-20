@@ -3,4 +3,113 @@
     height: 687px;
     margin: 0 auto;
     margin-top: -27px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    .process-titles {
+        text-transform: uppercase;
+
+        span {
+            font-family: $demi;
+            font-size: 15px;
+            color: white;
+        }
+        h3 {
+            font-family: $ysv;
+            font-size: 27px;
+            color: $golden;
+            margin-top: 18px;
+
+            &::after {
+                content: '';
+                display: inline-block;
+                width: 92px;
+                height: 1px;
+                background: $golden;
+                margin-left: 59px;
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    .process-steps-desc {
+        margin-top: 92px;
+        span {
+            font-family: $ysv;
+            font-size: 18px;
+            color: white;
+        }
+        h4 {
+            margin: 0;
+            font-family: $ysv;
+            font-size: 15px;
+            color: $golden;
+            margin-top: 22px;
+            text-transform: uppercase;
+        }
+        p {
+            display: block;
+            color: white;
+            font-family: $book;
+            font-size: 15px;
+            margin-top: 16px;
+            width: 337px;
+            height: 222px;
+        }
+    }
+    .pages {
+        margin-top: 61px;
+    }
+    .process-steps {
+        width: 61.8%;
+        height: 178px;
+        margin-top: 87px;
+        place-self: flex-end;
+
+        ol {
+            margin: 0; 
+            padding: 0;
+            height: 100%;
+            list-style: none;
+            display: grid;
+            grid-template: 1fr 1fr / 1fr 1fr 1fr;
+            grid-column-gap: 200px; 
+
+            li {
+                font-family: $book;
+                font-size: 15px;
+                color: white;
+                transition: opacity .2s ease-in-out;
+                cursor: pointer;
+
+                @for $i from 1 to 7 {
+                    &:nth-child(#{$i}) {
+                        &::before {
+                            content: '0#{$i}';
+                            display: block;
+                            width: fit-content;
+                            margin-bottom: 11px;
+                            color: white;
+                            border-bottom: 1px solid $golden;
+                        }
+                    }
+                }
+
+                &:not(:first-child) {
+                    opacity: .3;
+                }
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    img {
+        width: 765px;
+        height: 376px;
+        place-self: flex-end;
+        margin-top: 44px;
+    }
 }

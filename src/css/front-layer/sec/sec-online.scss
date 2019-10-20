@@ -39,7 +39,7 @@
 
     form {
         display: grid;
-        grid-template: 14px 33px 51px / 231px 58px 231px 49px 200px;
+        grid-template: 45px 37px 18px/231px 58px 231px 49px 200px;
         grid-auto-flow: column;
         grid-row: 5;
         align-self: end;
@@ -47,31 +47,30 @@
         
         label {
             grid-row: 1;
-        }
-        input {
-            grid-row: 2;
 
-            &.button {
-                grid-column: 5;
-                grid-row: 1 / span 2;
-            }
-
-            &::placeholder {
-                color: black;
-            }
-
-        }
-        label, input {
-            &:nth-child(3) {
+            &:nth-child(2) {
                 grid-column: 3;
             }
-            &:nth-child(4) {
-                grid-column: 3;
+
+            input {
+                width: 100%;
+                border-color: rgba(54,54,54,.3);
+    
+                &::placeholder {
+                    color: black;
+                }
+    
+            }
+            
+            &.check {
+                grid-row: 3;
+                grid-column: 1 / span 5;
             }
         }
-        label.check {
-            grid-row: 3;
-            grid-column: 1 / span 5;
+
+        .button {
+            grid-column: 5;
+            grid-row: 1;
         }
     }
 }

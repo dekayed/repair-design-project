@@ -1,6 +1,44 @@
 .sec-types {
     width: 87%;
-    height: 706px;
+    height: 1681px;
     margin: 0 auto;
-    margin-top: 148px;
+
+    .sec--title {
+        color: black;
+    }
+
+    .card {
+        background-size: 100%;
+    }
+    
+    .card-info, .card-price {
+        margin-left: 0!important;
+    }
+    .card-price {
+        width: 190px!important;
+        height: 40px!important;
+        font-size: 15px!important;
+    }
+    .card-info {
+        margin-top: 183px!important;
+
+        h3 {
+            font-size: 15px!important;
+        }
+        li {
+            font-size: 13px!important;
+        }
+    }
+
+    .card-1 {
+            background-image: url(img/type-1.png)!important;
+    }
+
+    .card-2 {
+        background-image: url(img/type-2.png);
+    }
+
+    .card-3 {
+        background-image: url(img/type-3.png)!important;
+    }
 }

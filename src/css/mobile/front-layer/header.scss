@@ -10,7 +10,7 @@ header {
         margin: 0 auto;
         height: 100%;
         display: grid;
-        grid-template: auto/176fr 56fr 107fr;
+        grid-template: auto/60% auto;
         align-items: center;
     
 
@@ -25,9 +25,10 @@ header {
         }
         a {
             color: white;
-            grid-column: 3;
+            grid-column: 2;
             font-family: $demi;
             text-decoration: none;
+            text-align: right;
         }
         button {
             display: none;

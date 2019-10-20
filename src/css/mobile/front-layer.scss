@@ -18,9 +18,8 @@ front-layer {
         box-sizing: border-box;
     
         &:hover {
-            background: white;
-            color: $golden;
-            border: 2px solid $golden;
+            background: #ad884d;
+            border: 2px solid $golden!important;
         }
     }
     
@@ -30,16 +29,15 @@ front-layer {
         border: 2px solid white;
         box-sizing: border-box;
         transition: all .15s ease-in-out;
+        transition-property: color, border-color;
         cursor: pointer;
         border-radius: 2px;
         text-transform: uppercase;
         font-family: $demi;
     
         &:hover {
-            color: $golden;
+            color: $golden!important;
             border-color: $golden;
         }
     }
 }
-    
-    

@@ -1,64 +1,42 @@
 .sec-projects {
     display: grid;
-    height: 552px;
+    height: 634px;
     width: 100%;
-    margin-top: 59px;
-    grid-template: 69px 483px/minmax(50px, calc(40vw - 492px)) 492px auto;
-    grid-template-areas: '. . tabs''. info pictures';
+    margin-top: 35px;
+    grid-template: 210px 241px / 87vw;
+    grid-template-areas: 'info''pictures';
+    justify-content: center;
 
     .tabs {
-        grid-area: tabs;
-        font-family: $ysv;
-        font-size: 14px;
-        font-weight: 600;
-        color: white;
-        list-style: none;
-        display: inline-flex;
-        text-transform: uppercase;
-        padding: 0;
-        margin: 0;
-    
-        .active {
-            color: $golden;
-        
-            &::after {
-                content: "";
-                width: 100%;
-                height: 2px;
-                background: $golden;
-                display: block;
-                margin-top: 5px;
-            }
-        }
-
-        li {
-            margin-right: 61px;
-        }
+        display: none;
     }
         
     .info {
         grid-area: info;
         display: grid;
-        grid-template: 66px 34px 73px 55px 242px 13px / auto;
-        grid-template-areas:"title"".""description"".""info-table""pages";
+        grid-template: 66px 22px 86px 314px 146px / 100%;
+        grid-template-areas:"title"".""description"".""info-table";
+        justify-items: center;
     
 
         h2 {
             text-transform: uppercase;
-            font-size: 27px;
+            font-size: 22px;
             color: $golden;
-            width: 100px;
+            width: 150px;
             letter-spacing: -2px;
             grid-area: title;
             margin: 0;
+            text-align: center;
         }
 
         h5 {
             font-family: $book;
             font-weight: 100;
-            font-size: 18px;
+            font-size: 14px;
             color: white;
-            width: 440px;
+            width: 95%;
+            text-align: center;
             grid-area: description;
             margin: 0;
         }
@@ -70,16 +48,17 @@
         
 
             .info-table-item {
-                width: 230px;
+                width: 50%;
             
                 h2 {
-                    font-size: 18px;
+                    font-size: 14px;
                     font-family: $ysv;
                     color: $golden;
                     text-transform: uppercase;
-                    width: 180px;
+                    width: 100%;
                     letter-spacing: 0px;
                     font-weight: 100;
+                    text-align: left;
                 }
                 
                 ul {
@@ -87,7 +66,7 @@
                     padding: 0;
                     margin: 0;
                     color: white;
-                    font-size: 15px;
+                    font-size: 14px;
                     font-family: $book;
                 
                     li {
@@ -98,41 +77,7 @@
         }
 
         .pages {
-            display: inline-flex;
-            grid-area: pages;
-        
-            button {
-                margin-right: 17px;
-                border: 0;
-                border-radius: 10px;
-                background: rgba(255,255,255,.6);
-                outline: none;
-            
-                &.active {
-                    background: #fff;
-                }
-            }
-
-            button:first-child {
-                background: url(img/page-arrow.svg);
-                margin-right: 30px;
-            }
-
-            button:first-child, button:last-child {
-                width: 41px;
-                height: 13px;
-                border: 0;
-              
-                &:active {
-                    margin-top: 1px;
-                }
-            }
-            
-            button:last-child {
-                margin-left: 13px;
-                background: url(img/page-arrow.svg);
-                transform: scaleX(-1);
-            }
+            display: none;
         }
     }
 
@@ -152,17 +97,31 @@
         .buttons {
             place-self: center;
             display: flex;
-            width: 57vw;
-            justify-content: flex-end;
+            width: 87vw;
+            justify-content: center;
             position: absolute;
-        
+
             button {
                 background: url(img/pic-arrow.png);
-                width: 81px;
-                height: 81px;
+                background-size: contain;
+                width: 36px;
+                height: 36px;
                 border: 0;
                 outline: none;
             }
+
+            &::before {
+                content: '';
+                display: block;
+                background: url(img/pic-arrow.png);
+                background-size: contain;
+                width: 36px;
+                height: 36px;
+                border: 0;
+                outline: none;
+                transform: scaleX(-1);
+                margin-right: 65vw;
+            }
         }
     }
-        }
+}

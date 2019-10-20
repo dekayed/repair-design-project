@@ -1,33 +1,14 @@
 .sec-banner {
     display: grid;
-    grid-template: 476px / 0px auto;
+    grid-template: 476px / 100%;
 
     .instagram {
         display: none;
-        
-        a {
-            color: $golden;
-            font-family: $demi;
-            text-decoration: none;
-            text-transform: uppercase;
-            writing-mode: vertical-lr;
-        
-            &::after {
-                content: "";
-                width: 3px;
-                height: 51px;
-                background: $golden;
-                float: right;
-                margin-top: 8px;
-                margin-left: 10px;
-            }
-        }
     }
 
     .banner {
         background-image: url(img/image-4.3.png);
         background-size: cover;
-        width: 100vw;
         display: flex;
         align-items: center;
     
@@ -35,7 +16,7 @@
             content: "";
             position: absolute;
             display: block;
-            width: 100vw;
+            width: 100%;
             height: 476px;
             z-index: 0;
             background-color: rgba(0, 0, 0, 0.7);
@@ -43,14 +24,14 @@
 
         .banner-content {
             height: 377px;
-            width: 100%;
+            width: 87%;
             z-index: 0;
-            padding-left: 18px;
+            margin: 0 auto;
         
             h1 {
                 font-family: 'Yeseva One';
                 font-size: 23px;
-                width: 310px;
+                width: 339px;
                 font-weight: 100;
                 text-transform: uppercase;
                 color: white;
@@ -63,46 +44,22 @@
             h4 {
                 font-family: $book;
                 font-size: 18px;
-                width: 310px;
+                width: 295px;
                 color: white;
                 font-weight: 100;
             }
 
             .buttons {
-                width: calc(100vw - 36px);
+                display: flex;
+                flex-direction: column;
             
                 button {
                     width: 100%;
                     height: 51px;
-                    font-family: $demi;
-                    text-transform: uppercase;
                     font-size: 13px;
-                    border-radius: 2px;
-                    transition: all .15s ease-in-out;
-                    cursor: pointer;
-                
-                    &:first-child {
-                        background: $golden;
-                        border: 0;
-                        color: white;
-                        margin-bottom: 26px;
-                    
-                        &:hover {
-                            background: white;
-                            color: $golden;
-                        }
-                    }
 
                     &:last-child {
-                        background: transparent;
-                        color: white;
-                        border: 1px solid white;
-                        box-sizing: border-box;
-
-                        &:hover {
-                            color: $golden;
-                            border-color: $golden;
-                        }
+                        margin-top: 26px;
                     }
                 }
             }

@@ -10,3 +10,206 @@
 @import "sec/sec-clients";
 @import "sec/sec-questions-form";
 @import "sec/sec-placing";
+
+.sec--title {
+    font-family: $ysv;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+
+    img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 13px;
+    }
+
+    .sec--title-desc {
+        margin-top: 24px;
+        font-family: $book;
+        text-transform: none;
+        display: block;
+        margin-top: 26px;
+        margin-bottom: 38px;
+    }
+}
+
+.pages {
+    display: inline-flex;
+    grid-area: pages;
+
+    button {
+        margin-right: 17px;
+        border: 0;
+        border-radius: 10px;
+        background: rgba(255,255,255,.6);
+        outline: none;
+        transition: all .3 ease-in-out;
+        cursor: pointer;
+    
+        &.active {
+            background: #fff;
+        }
+
+        &:hover {
+            background-color: rgba(255,255,255,1);
+        }
+    }
+
+    button:first-child {
+        background: url(img/page-arrow.svg);
+        margin-right: 30px;
+    }
+
+    button:first-child, button:last-child {
+        width: 41px;
+        height: 13px;
+        border: 0;
+      
+        &:active {
+            margin-top: 1px;
+        }
+    }
+    
+    button:last-child {
+        margin-left: 13px;
+        background: url(img/page-arrow.svg);
+        transform: scaleX(-1);
+    }
+}
+
+section form {
+    font-family: $book;
+
+    label {
+        font-size: 15px;
+        color: rgba(54, 54, 54, 0.5);
+    }
+    input {
+        border: 0;
+        border-bottom: 1px solid rgba(54, 54, 54, .5);
+        color: rgb(54,54,54);
+        font-size: 18px;
+        font-family: $book;
+        outline: none;
+        background: transparent;
+        display: block;
+    }
+    label.check {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        font-size: 16px;
+        color: #181818;
+
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+          
+        .checkmark {
+            top: 0;
+            left: 0;
+            height: 18px;
+            width: 18px;
+            background-color: #eee;
+            border-radius: 2px;
+            margin-right: 9px;
+        }
+          
+          /* On mouse-over, add a grey background color */
+        &:hover input ~ .checkmark {
+            background-color: #ccc;
+        }
+          
+          /* When the checkbox is checked, add a blue background */
+        input:checked ~ .checkmark {
+            background-color: $golden;
+        }
+          
+          /* Create the checkmark/indicator (hidden when not checked) */
+        .checkmark:after {
+            content: "";
+            display: none;
+        }
+          
+          /* Show the checkmark when checked */
+        input:checked ~ .checkmark:after {
+            display: block;
+        }
+          
+          /* Style the checkmark/indicator */
+        .checkmark:after {
+            margin-left: 6px;
+            margin-top: 2px;
+            width: 4px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    }
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+
+    .card {
+        background-repeat: no-repeat;
+        height: 100%;
+        margin-bottom: 59px;
+
+        img {
+            width: 100%;
+        }
+        
+        .card-info {
+            width: 84.2%;
+            background: white;
+            margin: 0 auto;
+            box-shadow: 10px 10px 20px rgba(0,0,0,.03);
+            padding-bottom: 49px;
+            margin-top: 294px;
+
+            h3 {
+                font-family: $ysv;
+                font-size: 18px;
+                margin: 0;
+                padding: 25px 25px 0 25px;
+            }
+
+            ul {
+                padding: 13px 0 0 25px;
+                margin: 0;
+                list-style: none;
+
+                li {
+                    color: #959595;
+                    font-family: $book;
+                    font-size: 15px;
+                    padding-bottom: 9px;
+                }
+            }
+        }
+        .card-price {
+            width: 228px;
+            height: 54px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            font-family: $ysv;
+            color: white;
+            font-size: 18px;
+            margin-top: -26px;
+            background: $golden;
+            margin-left: calc((100% - 84.2%) / 2);
+        }
+    }
+}
