@@ -1,6 +1,6 @@
 .sec-team {
     width: 87%;
-    height: 844px;
+    height: 1629px;
     margin: 0 auto;
     margin-top: 94px;
 
@@ -15,6 +15,12 @@
 
         .card-cont {
             display: flex;
+            margin-bottom: 54px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
             @for $i from 1 to 4 {
                 &::before {
                     content: '';
@@ -37,7 +43,7 @@
                 margin: 35px 0 0 35px;
 
                 .card-info {
-                    margin-top: 277px;
+                    margin-top: 257px;
                     padding-bottom: 47px;
 
                     h3 {
@@ -68,23 +74,6 @@
         }
     }
     p {
-        display: block;
-        width: 558px;
-        margin: 0 auto;
-        margin-top: 53px;
-        font-family: $book;
-        font-size: 20px;
-        line-height: 169.8%;
-        text-align: center;
-
-        &::before {
-            content: '';
-            display: block;
-            width: 55px;
-            height: 2px;
-            background: $golden;
-            margin: 0 auto;
-            margin-bottom: 17px;
-        }
+        display: none;
     }
 }

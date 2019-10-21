@@ -213,3 +213,45 @@ section form {
         }
     }
 }
+
+.carousel {
+    grid-area: pictures;
+    overflow-x: hidden;
+    display: flex;
+
+    .pics-container {
+        display: flex;
+    
+        img {
+            margin-right: 23px;
+        }
+    }
+
+    .buttons {
+        place-self: center;
+        display: flex;
+        width: 87vw;
+        justify-content: center;
+        position: absolute;
+
+        button {
+            background: url(img/pic-arrow.png);
+            background-size: contain;
+            width: 36px;
+            height: 36px;
+            border: 0;
+            outline: none;
+
+            &:first-child {
+                background: url(img/pic-arrow.png);
+                background-size: contain;
+                width: 36px;
+                height: 36px;
+                border: 0;
+                outline: none;
+                transform: scaleX(-1);
+                margin-right: 65vw;
+            }
+        }
+    }
+}

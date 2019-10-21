@@ -1,15 +1,15 @@
 .sec-prices {
     width: 87%;
-    height: 922px;
+    height: 1715px;
     margin: 0 auto;
     margin-top: 112px;
 
     .sec--title {
-        color: black;
+        color: white;
     }
 
     .card-1 {
-            background-image: url(img/type-1.png)!important;
+        background-image: url(img/type-1.png)!important;
     }
 
     .card-2 {
@@ -18,5 +18,40 @@
 
     .card-3 {
         background-image: url(img/type-3.png)!important;
+    }
+
+    .card {
+        background-size: 100%;
+    }
+    
+    .card-info, .card-price {
+        margin-left: 0!important;
+    }
+    .card-price {
+        width: 190px!important;
+        height: 40px!important;
+        font-size: 15px!important;
+    }
+    .card-info {
+        margin-top: 183px!important;
+
+        h3 {
+            font-size: 15px!important;
+        }
+        li {
+            font-size: 13px!important;
+        }
+    }
+    @for $i from 8 to 13 {
+        .card:last-child li:nth-child(#{$i}) {
+            display: none;
+        }
+    }
+    
+    .card-price {
+        margin-left: 0!important;
+        font-size: 15px!important;
+        height: 40px!important;
+        box-shadow: 5px 5px 10px rgba(227, 184, 115, .3);
     }
 }

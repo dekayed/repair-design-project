@@ -1,23 +1,28 @@
 .sec-placing {
     width: 87%; 
-    height: 613px; 
+    height: 430px; 
     margin: 0 auto;
     margin-top: 52px;
+    display: flex;
+    flex-direction: column;
 
     .sec-placing__address {
-        width: 589px;
+        width: 100%;
         height: 51px;
         font-family: $ysv;
-        font-size: 20px;
+        font-size: 18px;
         color: $golden;
         text-transform: uppercase;
         margin: 0 auto;
+        margin-top: 28px;
         text-align: center;
+        order: 2;
     }
     .sec-placing__socials {
         margin: 0 auto;
         margin-top: 26px;
         width: fit-content;
+        order: 3;
 
         a {
             width: 28px;
@@ -36,6 +41,17 @@
     }
     .mapouter {
         margin: 0 auto;
-        margin-top: 28px;
+        width: 87%;
+        height: 255px;
+        order: 1;
+
+        .gmap_canvas {
+            width: 100%;
+            height: 100%;
+            iframe {
+                width: 100%;
+                height: 100%;
+            }
+        }        
     }
 }

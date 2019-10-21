@@ -38,6 +38,6 @@ module.exports = {
       }
       : {
         path: path.resolve(__dirname, './dev/'),
-        publicPath: './dev',
+        publicPath: '/dev',
       },
   };
