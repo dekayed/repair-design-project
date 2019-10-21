@@ -114,8 +114,8 @@
         .buttons {
             place-self: center;
             display: flex;
-            width: 57vw;
-            justify-content: flex-end;
+            width: 59vw;
+            justify-content: center;
             position: absolute;
         
             button {
@@ -124,6 +124,11 @@
                 height: 81px;
                 border: 0;
                 outline: none;
+
+                &:first-child {
+                    margin-right: 44vw;
+                    transform: scaleX(-1);
+                }
             }
         }
     }
