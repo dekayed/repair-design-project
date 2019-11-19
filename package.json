@@ -1,11 +1,10 @@
 {
   "name": "repair-design-project",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "export NODE_ENV=development && webpack-dev-server --open",
-    "build": "export NODE_ENV=production && webpack"
+    "start": "webpack-dev-server --mode=development --open",
+    "build": "webpack --mode=production"
   },
   "repository": {
     "type": "git",
